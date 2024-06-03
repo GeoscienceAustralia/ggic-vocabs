@@ -5,8 +5,10 @@ import httpx
 
 def main():
     # get the validator
-    r = httpx.get("https://w3id.org/profile/vocpub/validator", follow_redirects=True)
+    r = httpx.get("https://w3id.org/profile/vocpub/validator/4.7", follow_redirects=True)
     assert r.status_code == 200
+    with open("vocpub-4.7.ttl", "w") as f:
+        f.write(r.text)
 
     # for all vocabs...
     invalid_vocabs = {} # format {vocab_filename: error_msg}
