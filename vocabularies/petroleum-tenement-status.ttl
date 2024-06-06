@@ -5,11 +5,15 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://resource.geoscience.gov.au/classifier/ggic/petroleum-tenement-status> a skos:Collection ;
     skos:prefLabel "Petroleum Tenement Status - All Concepts"@en ;
     skos:definition "All Concepts in this ConceptScheme in a flat list"@en ;
-    dcterms:provenance "Created to provide all Concepts in this Concept scheme in a flat list"@en ;    
+    dcterms:provenance "Created to provide all Concepts in this Concept scheme in a flat list"@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;    
     skos:member pts:abandoned,
         pts:accepted,
         pts:active,
@@ -787,10 +791,23 @@ pts:application a skos:Concept ;
     skos:prefLabel "Application"@en ;
     skos:topConceptOf cs: .
 
+<https://linked.data.gov.au/org/ggic-pdwg>
+    a schema:Organization ;
+    schema:name "GGIC Petroleum Data Working Group" ;
+    schema:url "https://www.geoscience.gov.au/about"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/ggic>
+    a schema:Organization ;
+    schema:name "Australia-New Zealand Government Geoscience Information Committee (GGIC)" ;
+    schema:url "https://www.geoscience.gov.au/about"^^xsd:anyURI ;
+.
+
 cs: a skos:ConceptScheme ;
-    dcterms:creator "GGIC Petroleum Data Working Group" ;
+    dcterms:creator <https://linked.data.gov.au/org/ggic-pdwg> ;
     dcterms:created "2021-06-14"^^xsd:date ;
     dcterms:modified "2021-07-05"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/ggic> ;
     skos:definition "This vocabulary maps all terms used by Australian State, Territory and Commonwealth jurisdictions to describe the status of petroleum tenement to a common simplified classification."@en ;
     skos:prefLabel "Petroleum Tenement Status"@en ;
     skos:changeNote "2021-06-14 - Ollie Raymond - Original SKOS implementation"@en , "2021-07-05 - Nicholas Car & Vaughan Edgell - SKOS implementation aligned with VocPub vocabulary profile for display"@en ;
