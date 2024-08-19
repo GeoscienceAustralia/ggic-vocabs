@@ -14,7 +14,9 @@
 <http://resource.geoscience.gov.au/classifier/ggic/tenementtype> a skos:Collection ;
     skos:prefLabel "Tenement Type - All Concepts"@en ;
     skos:definition "All the Concepts in this ConceptScheme"@en ;
-    dcterms:source cs: ;
+    skos:historyNote "Defined in this vocabulary as a flat listing of all its Concepts" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
     skos:member tt:Christmas-Island-mining-lease,
         tt:ancillary-mining-licence,
         tt:assessment-lease,
@@ -88,15 +90,6 @@
         tt:temporary-reserve,
         tt:tourist-mining-authority,
         tt:work-authority .
-
-<http://editor.vocabs.ands.org.au/user/Aust/NZ-Government-Geoscience-Information-Committee-GGIC> a dcterms:Agent,
-        rdfs:Resource ;
-    foaf:name "Aust/NZ-Government-Geoscience-Information-Committee-GGIC"^^xsd:string .
-
-<http://www.geoscience.gov.au> a sdo:GovernmentOrganization ;
-    sdo:alternateName "AusGIN" ;
-    sdo:name "Australian Geoscience Information Network" ;
-    sdo:url <http://www.geoscience.gov.au> .
 
 tt:Christmas-Island-mining-lease a skos:Concept ;
     dcterms:provenance "WA"@en ;
@@ -862,13 +855,18 @@ tt:production a skos:Concept ;
     skos:prefLabel "production"@en ;
     skos:topConceptOf cs: .
 
+<https://linked.data.gov.au/org/ausgin> a sdo:Organization ;
+    sdo:alternateName "AusGIN" ;
+    sdo:name "Australian Geoscience Information Network" ;
+    sdo:url "http://www.geoscience.gov.au"^^xsd:anyURI .
+
 cs: a skos:ConceptScheme ;
-    dcterms:creator <http://www.geoscience.gov.au> ;
-    dcterms:publisher <http://www.geoscience.gov.au> ;
     dcterms:created "2015-11-26"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/ausgin> ;
     skos:definition "This concept scheme defines terms used to describe the type of mineral tenements granted in Australian and New Zealand jurisdictions (eg, exploration licence, mining lease)."@en ;
-    dcterms:modified "2017-09-06"^^xsd:date ;
+    dcterms:modified "2024-07-29"^^xsd:date ;
     dcterms:issued "2017-09-06"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/ausgin> ;
     owl:versionInfo "v0.1"^^xsd:string ;
     skos:changeNote "2016-07-22 OLR - Reformat SKOS-RDF for migration to new repository"@en,
         "Original SKOS implementation, 26 Nov 2015."@en ;

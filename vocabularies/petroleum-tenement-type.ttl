@@ -2,6 +2,8 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix lhk: <http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey> .
 @prefix ptt: <http://resource.geoscience.gov.au/classifier/ggic/petroleum-tenement-type/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -9,7 +11,9 @@
 <http://resource.geoscience.gov.au/classifier/ggic/petroleum-tenement-type> a skos:Collection ;
     skos:prefLabel "Petroleum Tenement Type - All Concepts"@en ;
     skos:definition "All Concepts in this ConceptScheme in a flat list"@en ;
-    dcterms:provenance "Created to provide all Concepts in this Concept scheme in a flat list"@en ;
+    skos:historyNote "Defined in this vocabulary as a flat listing of all its Concepts" ;
+    rdfs:isDefinedBy cs: ;
+    skos:inScheme cs: ;
     skos:member ptt:access,
         ptt:access-authority,
         ptt:assessment,
@@ -1094,10 +1098,16 @@ ptt:exploration-petroleum a skos:Concept ;
     skos:notation "1.3"^^lhk: ;
     skos:prefLabel "exploration - petroleum"@en .
 
+<https://linked.data.gov.au/org/ausgin> a sdo:Organization ;
+    sdo:alternateName "AusGIN" ;
+    sdo:name "Australian Geoscience Information Network" ;
+    sdo:url "http://www.geoscience.gov.au"^^xsd:anyURI .
+
 cs: a skos:ConceptScheme ;
-    dcterms:creator "GGIC Petroleum Data Working Group" ;
     dcterms:created "2021-03-17"^^xsd:date ;
-    dcterms:modified "2021-07-05"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/ausgin> ;
+    dcterms:modified "2024-07-29"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/ausgin> ;
     skos:definition "This vocabulary maps all terms used by Australian State, Territory and Commonwealth jurisdictions to describe types of petroleum tenements to a common simplified classification."@en ;
     skos:prefLabel "Petroleum Tenement Type"@en ;
     skos:changeNote "2021-03-17 - Ollie Raymond - Original SKOS implementation"@en,
