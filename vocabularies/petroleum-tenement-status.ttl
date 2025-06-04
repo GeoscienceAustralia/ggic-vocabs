@@ -959,7 +959,7 @@ cs:
     a skos:ConceptScheme ;
     schema:dateCreated "2021-06-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/agson> ;
-    schema:dateModified "2024-10-16"^^xsd:date ;
+    schema:dateModified "2025-06-104"^^xsd:date ;
     skos:historyNote "This file contains the 2021.01 SKOS-RDF version of the GGIC Petroleum Tenement Type vocabulary; adopted April 2021; converted to MS Excel XML for SKOS generation using SKOS_from_XLS_2019.01.xslt"@en ;
     schema:publisher <https://linked.data.gov.au/org/agson> ;
     skos:changeNote
