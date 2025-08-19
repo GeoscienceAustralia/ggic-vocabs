@@ -316,7 +316,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :expired ;
     skos:definition "Not given"@en ;
     skos:inScheme cs: ;
-    skos:narrower :expired-blocks-encumbered ;
     skos:notation "4.9.1"^^lhk: ;
     skos:prefLabel "Expired - Blocks Encumbered"@en ;
 .
