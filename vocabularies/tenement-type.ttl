@@ -1,7 +1,8 @@
 PREFIX : <http://resource.geoscience.gov.au/classifier/ggic/tenementtype/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype>
-PREFIX ggic-al: <http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel>
-PREFIX ggic-lhk: <http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey>
+PREFIX al: <http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel>
+PREFIX lhk: <http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -98,7 +99,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "WA -"@en ;
     skos:inScheme cs: ;
-    skos:notation "02.02"^^ggic-lhk: ;
+    skos:notation "02.02"^^lhk: ;
     skos:prefLabel "Christmas Island mining lease"@en ;
 .
 
@@ -109,7 +110,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "NZ -"@en ;
     skos:inScheme cs: ;
-    skos:notation "02.01"^^ggic-lhk: ;
+    skos:notation "02.01"^^lhk: ;
     skos:prefLabel "ancillary mining licence"@en ;
 .
 
@@ -121,8 +122,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "AL"^^ggic-al: ,
-        "01.01"^^ggic-lhk: ;
+        "AL"^^al: ,
+        "01.01"^^lhk: ;
     skos:prefLabel "assessment lease"@en ;
 .
 
@@ -134,8 +135,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "A(MO)L"^^ggic-al: ,
-        "01.02"^^ggic-lhk: ;
+        "A(MO)L"^^al: ,
+        "01.02"^^lhk: ;
     skos:prefLabel "assessment lease (private mineral)"@en ;
 .
 
@@ -146,7 +147,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "WA -"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.03"^^ggic-lhk: ;
+    skos:notation "01.03"^^lhk: ;
     skos:prefLabel "Christmas Island exploration licence"@en ;
 .
 
@@ -157,7 +158,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "WA - Mining lease specifically for coal under repealed 1904 Act."@en ;
     skos:inScheme cs: ;
-    skos:notation "02.03"^^ggic-lhk: ;
+    skos:notation "02.03"^^lhk: ;
     skos:prefLabel "coal mining lease"@en ;
 .
 
@@ -168,7 +169,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "WA -"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.04"^^ggic-lhk: ;
+    skos:notation "01.04"^^lhk: ;
     skos:prefLabel "Commonwealth exploration licence"@en ;
 .
 
@@ -180,8 +181,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "CML"^^ggic-al: ,
-        "02.04"^^ggic-lhk: ;
+        "CML"^^al: ,
+        "02.04"^^lhk: ;
     skos:prefLabel "consolidated mining lease"@en ;
 .
 
@@ -192,7 +193,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "NZ -"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.05"^^ggic-lhk: ;
+    skos:notation "01.05"^^lhk: ;
     skos:prefLabel "continental shelf licence"@en ;
 .
 
@@ -204,8 +205,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "DL"^^ggic-al: ,
-        "02.05"^^ggic-lhk: ;
+        "DL"^^al: ,
+        "02.05"^^lhk: ;
     skos:prefLabel "dredging lease"@en ;
 .
 
@@ -217,8 +218,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "TAS - Standard exploration tenement type for all commodities (Categories 1 to 6). VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s13.html. WA - Block based system; max 70 blocks; term 5 years plus 2 extensions; surrender 50%; 100 tonnes of material."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "EL"^^ggic-al: ,
-        "01.06"^^ggic-lhk: ;
+        "EL"^^al: ,
+        "01.06"^^lhk: ;
     skos:prefLabel "exploration licence"@en ;
 .
 
@@ -230,8 +231,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "SA - Application for an Exploration Licence."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "ELA"^^ggic-al: ,
-        "01.07"^^ggic-lhk: ;
+        "ELA"^^al: ,
+        "01.07"^^lhk: ;
     skos:prefLabel "exploration licence application"@en ;
 .
 
@@ -244,8 +245,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NT - Licence to carry out feasibility study or retain ore body not economically viable. See also 'retention licence' used by other jurisdictions."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "ELR"^^ggic-al: ,
-        "01.11"^^ggic-lhk: ;
+        "ELR"^^al: ,
+        "01.11"^^lhk: ;
     skos:prefLabel "exploration licence in retention"@en ;
 .
 
@@ -256,7 +257,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "WA -"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.08"^^ggic-lhk: ;
+    skos:notation "01.08"^^lhk: ;
     skos:prefLabel "exploration licence offshore"@en ;
 .
 
@@ -268,8 +269,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "E(MO)L"^^ggic-al: ,
-        "01.09"^^ggic-lhk: ;
+        "E(MO)L"^^al: ,
+        "01.09"^^lhk: ;
     skos:prefLabel "exploration licence (private mineral)"@en ;
 .
 
@@ -281,8 +282,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NT - Replacement exploration licence when amalgamating two or more ELs after expiry of original grant/allowed renewal periods. No longer active title type under the MTA"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "SEL"^^ggic-al: ,
-        "01.10"^^ggic-lhk: ;
+        "SEL"^^al: ,
+        "01.10"^^lhk: ;
     skos:prefLabel "exploration licence - substitution"@en ;
 .
 
@@ -293,7 +294,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "NZ -"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.12"^^ggic-lhk: ;
+    skos:notation "01.12"^^lhk: ;
     skos:prefLabel "exploration permit"@en ;
 .
 
@@ -305,8 +306,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "QLD - Standard exploration permit for coal which allows for overlap with EPM or EPS."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "EPC"^^ggic-al: ,
-        "01.13"^^ggic-lhk: ;
+        "EPC"^^al: ,
+        "01.13"^^lhk: ;
     skos:prefLabel "exploration permit for coal"@en ;
 .
 
@@ -318,8 +319,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "QLD - Standard exploration permit for minerals which allows for overlap with EPC and EPS."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "EPM"^^ggic-al: ,
-        "01.14"^^ggic-lhk: ;
+        "EPM"^^al: ,
+        "01.14"^^lhk: ;
     skos:prefLabel "exploration permit for minerals"@en ;
 .
 
@@ -331,8 +332,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "QLD - Special exploration permit for minerals which allows for overlap with EPM by mutual agreement with EPM holder where minerals sought are mutually exclusive."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "EPS"^^ggic-al: ,
-        "01.15"^^ggic-lhk: ;
+        "EPS"^^al: ,
+        "01.15"^^lhk: ;
     skos:prefLabel "exploration permit special"@en ;
 .
 
@@ -344,8 +345,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "EPL"^^ggic-al: ,
-        "01.16"^^ggic-lhk: ;
+        "EPL"^^al: ,
+        "01.16"^^lhk: ;
     skos:prefLabel "exploration prospecting lease"@en ;
 .
 
@@ -357,8 +358,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "missing"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "ERA"^^ggic-al: ,
-        "01.17"^^ggic-lhk: ;
+        "ERA"^^al: ,
+        "01.17"^^lhk: ;
     skos:prefLabel "exploration release area"@en ;
 .
 
@@ -370,8 +371,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NT - To explore for extractive minerals"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "EMEL"^^ggic-al: ,
-        "01.18"^^ggic-lhk: ;
+        "EMEL"^^al: ,
+        "01.18"^^lhk: ;
     skos:prefLabel "extractive mineral exploration licence"@en ;
 .
 
@@ -383,8 +384,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "SA - An EML entitles the lessee to carry out mining operations specified in the lease for the recovery of extractive minerals. NT - To mine for extractive minerals and/or erect infrastructure"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "EML"^^ggic-al: ,
-        "02.06"^^ggic-lhk: ;
+        "EML"^^al: ,
+        "02.06"^^lhk: ;
     skos:prefLabel "extractive mineral lease"@en ;
 .
 
@@ -396,8 +397,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NT - A permit to extract, remove, store or process extractive minerals"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "EMP"^^ggic-al: ,
-        "02.07"^^ggic-lhk: ;
+        "EMP"^^al: ,
+        "02.07"^^lhk: ;
     skos:prefLabel "extractive mineral permit"@en ;
 .
 
@@ -409,8 +410,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NT - Declared areas for fossicking"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "FA"^^ggic-al: ,
-        "01.19"^^ggic-lhk: ;
+        "FA"^^al: ,
+        "01.19"^^lhk: ;
     skos:prefLabel "fossicking area (s.131)"@en ;
 .
 
@@ -421,7 +422,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "WA - Lease not specifically for mineral extraction. Linked to mining opreations for purposes of operating machinery and depositing tailings."@en ;
     skos:inScheme cs: ;
-    skos:notation "02.08"^^ggic-lhk: ;
+    skos:notation "02.08"^^lhk: ;
     skos:prefLabel "general purpose lease"@en ;
 .
 
@@ -432,7 +433,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "WA - Lease not specifically for mineral extraction. Linked to mining opreations for purposes of operating machinery and depositing tailings, in State Agreement area."@en ;
     skos:inScheme cs: ;
-    skos:notation "02.09"^^ggic-lhk: ;
+    skos:notation "02.09"^^lhk: ;
     skos:prefLabel "general purpose lease S.A."@en ;
 .
 
@@ -443,7 +444,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "NZ -"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.20"^^ggic-lhk: ;
+    skos:notation "01.20"^^lhk: ;
     skos:prefLabel "gold fossicking area"@en ;
 .
 
@@ -455,8 +456,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "GL"^^ggic-al: ,
-        "02.10"^^ggic-lhk: ;
+        "GL"^^al: ,
+        "02.10"^^lhk: ;
     skos:prefLabel "gold lease"@en ;
 .
 
@@ -467,7 +468,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "TAS -"@en ;
     skos:inScheme cs: ;
-    skos:notation "02.11"^^ggic-lhk: ;
+    skos:notation "02.11"^^lhk: ;
     skos:prefLabel "lease"@en ;
 .
 
@@ -478,7 +479,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "TAS -"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.21"^^ggic-lhk: ;
+    skos:notation "01.21"^^lhk: ;
     skos:prefLabel "licence"@en ;
 .
 
@@ -489,7 +490,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "WA - Mining tenement under the repealed 1904 Act."@en ;
     skos:inScheme cs: ;
-    skos:notation "02.12"^^ggic-lhk: ;
+    skos:notation "02.12"^^lhk: ;
     skos:prefLabel "licence to treat tailings"@en ;
 .
 
@@ -501,8 +502,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "M(C)L"^^ggic-al: ,
-        "02.13"^^ggic-lhk: ;
+        "M(C)L"^^al: ,
+        "02.13"^^lhk: ;
     skos:prefLabel "mineral claim converted to lease"@en ;
 .
 
@@ -513,7 +514,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "WA -"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.22"^^ggic-lhk: ;
+    skos:notation "01.22"^^lhk: ;
     skos:prefLabel "mineral claim (exploration)"@en ;
 .
 
@@ -525,8 +526,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "SA - An MC provides an exclusive right for 12 months to prospect for minerals within the claim area (conditions apply). NT - Small scale mining or exploration up to 40 Ha under the Mining Act. Not an active title type under the MTA and are in process of being converted to appropriate title type."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "MC"^^ggic-al: ,
-        "02.16"^^ggic-lhk: ;
+        "MC"^^al: ,
+        "02.16"^^lhk: ;
     skos:prefLabel "mineral claim (production)"@en ;
 .
 
@@ -538,8 +539,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "QLD - A holding permit for coal or minerals which allows further exploration and testing within limits."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "MDL"^^ggic-al: ,
-        "01.23"^^ggic-lhk: ;
+        "MDL"^^al: ,
+        "01.23"^^lhk: ;
     skos:prefLabel "mineral development licence"@en ;
 .
 
@@ -551,8 +552,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "SA - An ML entitles the lessee to carry out mining operations specified in the lease for the recovery of minerals other than extractive minerals. WA - Mining tenement under the repealed 1904 Act. NT - To mine for minerals, and/or erect infrastructures."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "ML"^^ggic-al: ,
-        "02.14"^^ggic-lhk: ;
+        "ML"^^al: ,
+        "02.14"^^lhk: ;
     skos:prefLabel "mineral lease"@en ;
 .
 
@@ -563,7 +564,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "WA - Special Agreement Act mineral lease."@en ;
     skos:inScheme cs: ;
-    skos:notation "02.15"^^ggic-lhk: ;
+    skos:notation "02.15"^^lhk: ;
     skos:prefLabel "mineral lease S.A."@en ;
 .
 
@@ -575,8 +576,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "QLD - Small scale mining activity commonly used for gemstones, opals and sometimes gold; Limited area and conditions on production methods"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "MC"^^ggic-al: ,
-        "02.17"^^ggic-lhk: ;
+        "MC"^^al: ,
+        "02.17"^^lhk: ;
     skos:prefLabel "mining claim"@en ;
 .
 
@@ -588,8 +589,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "TAS - Standard mineral extraction lease (for mineral categories 1,2,3 and 5). WA - Tenement on which there is an identified mineral resource for mining. Term 21 years + renewal."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "ML"^^ggic-al: ,
-        "02.18"^^ggic-lhk: ;
+        "ML"^^al: ,
+        "02.18"^^lhk: ;
     skos:prefLabel "mining lease"@en ;
 .
 
@@ -600,7 +601,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "WA - Max area 200 ha,term 4 years can extract 500 tonnes of material"@en ;
     skos:inScheme cs: ;
-    skos:notation "02.19"^^ggic-lhk: ;
+    skos:notation "02.19"^^lhk: ;
     skos:prefLabel "mining lease S.A."@en ;
 .
 
@@ -611,7 +612,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s14.html"@en ;
     skos:inScheme cs: ;
-    skos:notation "02.20"^^ggic-lhk: ;
+    skos:notation "02.20"^^lhk: ;
     skos:prefLabel "mining licence"@en ;
 .
 
@@ -623,8 +624,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "M(MO)L"^^ggic-al: ,
-        "02.21"^^ggic-lhk: ;
+        "M(MO)L"^^al: ,
+        "02.21"^^lhk: ;
     skos:prefLabel "mining (mineral owner) lease"@en ;
 .
 
@@ -635,7 +636,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "NZ -"@en ;
     skos:inScheme cs: ;
-    skos:notation "02.22"^^ggic-lhk: ;
+    skos:notation "02.22"^^lhk: ;
     skos:prefLabel "mining permit"@en ;
 .
 
@@ -647,8 +648,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "MPL"^^ggic-al: ,
-        "02.23"^^ggic-lhk: ;
+        "MPL"^^al: ,
+        "02.23"^^lhk: ;
     skos:prefLabel "mining purposes lease"@en ;
 .
 
@@ -659,7 +660,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "WA - Lease not specifically for mineral extraction. An ancilliary tenement to a mining lease for the purposes of infrastructure such as roads, pipelines etc."@en ;
     skos:inScheme cs: ;
-    skos:notation "02.24"^^ggic-lhk: ;
+    skos:notation "02.24"^^lhk: ;
     skos:prefLabel "miscellaneous licence"@en ;
 .
 
@@ -670,7 +671,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "WA - Lease not specifically for mineral extraction. An ancilliary tenement to a mining lease for the purposes of infrastructure such as roads, pipelines etc, under a Special Agreement Act."@en ;
     skos:inScheme cs: ;
-    skos:notation "02.25"^^ggic-lhk: ;
+    skos:notation "02.25"^^lhk: ;
     skos:prefLabel "miscellaneous licence S.A."@en ;
 .
 
@@ -682,8 +683,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "SA - An MPL may be granted for any purpose ancillary to the conduct of mining operations, for example an operating plant, drainage or an access road."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "MPL"^^ggic-al: ,
-        "02.26"^^ggic-lhk: ;
+        "MPL"^^al: ,
+        "02.26"^^lhk: ;
     skos:prefLabel "miscellaneous purposes licence"@en ;
 .
 
@@ -695,8 +696,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NT - Offshore Waters [Applications of Territory Laws] Act 1994. To explore for minerals outside of the 3 nautical mile"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "OEL"^^ggic-al: ,
-        "01.24"^^ggic-lhk: ;
+        "OEL"^^al: ,
+        "01.24"^^lhk: ;
     skos:prefLabel "offshore exploration licence"@en ;
 .
 
@@ -707,7 +708,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "TAS -"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.25"^^ggic-lhk: ;
+    skos:notation "01.25"^^lhk: ;
     skos:prefLabel "offshore mineral licence"@en ;
 .
 
@@ -719,8 +720,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NT - Off-shore Waters [Application of Territory Laws] Act 1994 To mine for minerals outside the 3 nautical mile"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "OML"^^ggic-al: ,
-        "02.27"^^ggic-lhk: ;
+        "OML"^^al: ,
+        "02.27"^^lhk: ;
     skos:prefLabel "offshore mining licence"@en ;
 .
 
@@ -732,8 +733,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NT - Off-shore Waters [Application of Territory Laws] Act 1994"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "ORL"^^ggic-al: ,
-        "01.26"^^ggic-lhk: ;
+        "ORL"^^al: ,
+        "01.26"^^lhk: ;
     skos:prefLabel "offshore retention licence"@en ;
 .
 
@@ -745,8 +746,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NT - A special purpose consent authorises the holder to carry out either scientific investigations, a reconnaissance survey or collect a small amount of minerals. Actually a title under the Commonwealth Offshore Minerals Act, but each state were to use as model for within 3 mile limit."@en ;
     skos:inScheme cs: ;
     skos:notation
-        "OSPC"^^ggic-al: ,
-        "01.27"^^ggic-lhk: ;
+        "OSPC"^^al: ,
+        "01.27"^^lhk: ;
     skos:prefLabel "offshore special purpose consents"@en ;
 .
 
@@ -758,8 +759,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "PLL"^^ggic-al: ,
-        "02.28"^^ggic-lhk: ;
+        "PLL"^^al: ,
+        "02.28"^^lhk: ;
     skos:prefLabel "private lands lease"@en ;
 .
 
@@ -771,8 +772,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "PL(MP)L"^^ggic-al: ,
-        "02.29"^^ggic-lhk: ;
+        "PL(MP)L"^^al: ,
+        "02.29"^^lhk: ;
     skos:prefLabel "private lands (mining purposes) lease"@en ;
 .
 
@@ -783,7 +784,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "SA - tenements declared prior to the Mining Act, 1971 and are subject to specific conditions."@en ;
     skos:inScheme cs: ;
-    skos:notation "02.30"^^ggic-lhk: ;
+    skos:notation "02.30"^^lhk: ;
     skos:prefLabel "private mine"@en ;
 .
 
@@ -794,7 +795,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "NZ -"@en ;
     skos:inScheme cs: ;
-    skos:notation "02.31"^^ggic-lhk: ;
+    skos:notation "02.31"^^lhk: ;
     skos:prefLabel "private mining operation"@en ;
 .
 
@@ -805,7 +806,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "TAS - for extraction of Geothermal (category 6) or onshore oil and gas (category 4)"@en ;
     skos:inScheme cs: ;
-    skos:notation "02.32"^^ggic-lhk: ;
+    skos:notation "02.32"^^lhk: ;
     skos:prefLabel "production licence"@en ;
 .
 
@@ -816,7 +817,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "WA - licence for prospecting, up to 200 hectares, 4 year term + 4year extension. Removal of up to 500 t of material allowed. VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s14b.html"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.28"^^ggic-lhk: ;
+    skos:notation "01.28"^^lhk: ;
     skos:prefLabel "prospecting licence"@en ;
 .
 
@@ -827,7 +828,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "QLD - Allows small scale exploration with area limits and pegging for mining applications"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.29"^^ggic-lhk: ;
+    skos:notation "01.29"^^lhk: ;
     skos:prefLabel "prospecting permit"@en ;
 .
 
@@ -838,7 +839,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "SA - An RL entitles the lessee to retain the lease area for future mining operations where, for economic or other reasons, the lessee is justified in not proceeding immediately."@en ;
     skos:inScheme cs: ;
-    skos:notation "02.33"^^ggic-lhk: ;
+    skos:notation "02.33"^^lhk: ;
     skos:prefLabel "retention lease"@en ;
 .
 
@@ -850,7 +851,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "TAS - Exploration tenement where a resource has been defined but is currently sub-economic, and requires further exploratoin before a Mining lease can be granted VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s14c.html. WA - Holding title for an identified mineral resource for later mining, but is not able to be further explored or mined."@en ;
     skos:inScheme cs: ;
-    skos:notation "01.30"^^ggic-lhk: ;
+    skos:notation "01.30"^^lhk: ;
     skos:prefLabel "retention licence"@en ;
 .
 
@@ -862,8 +863,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "S(C&PL)L"^^ggic-al: ,
-        "02.34"^^ggic-lhk: ;
+        "S(C&PL)L"^^al: ,
+        "02.34"^^lhk: ;
     skos:prefLabel "special (crown & private lands) lease"@en ;
 .
 
@@ -874,7 +875,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "TAS - Exploration tenement - larger than normal tenement to explore for new commodity types or utilise new exploration techniques. May be extended to a maximum of 10 years."@en ;
     skos:inScheme cs: ;
-    skos:notation "01.31"^^ggic-lhk: ;
+    skos:notation "01.31"^^lhk: ;
     skos:prefLabel "special exploration licence"@en ;
 .
 
@@ -886,8 +887,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "NSW -"@en ;
     skos:inScheme cs: ;
     skos:notation
-        "SL"^^ggic-al: ,
-        "02.35"^^ggic-lhk: ;
+        "SL"^^al: ,
+        "02.35"^^lhk: ;
     skos:prefLabel "special lease"@en ;
 .
 
@@ -898,7 +899,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "SA - The tenement type SML (Special Mining Lease) relates to the Olympic Dam mine, which is administered under the Roxby Downs (Indenture Ratification) Act, 1982. There is also an historic disused tenement type SML."@en ;
     skos:inScheme cs: ;
-    skos:notation "02.36"^^ggic-lhk: ;
+    skos:notation "02.36"^^lhk: ;
     skos:prefLabel "special mining lease"@en ;
 .
 
@@ -909,7 +910,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "NZ -"@en ;
     skos:inScheme cs: ;
-    skos:notation "02.37"^^ggic-lhk: ;
+    skos:notation "02.37"^^lhk: ;
     skos:prefLabel "special purpose mining permit"@en ;
 .
 
@@ -920,7 +921,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "WA - Mining tenement under the repealed 1904 Act."@en ;
     skos:inScheme cs: ;
-    skos:notation "01.32"^^ggic-lhk: ;
+    skos:notation "01.32"^^lhk: ;
     skos:prefLabel "temporary reserve"@en ;
 .
 
@@ -931,7 +932,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :exploration ;
     skos:definition "VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s59.html"@en ;
     skos:inScheme cs: ;
-    skos:notation "01.33"^^ggic-lhk: ;
+    skos:notation "01.33"^^lhk: ;
     skos:prefLabel "tourist mining authority"@en ;
 .
 
@@ -942,7 +943,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:broader :production ;
     skos:definition "VIC -"@en ;
     skos:inScheme cs: ;
-    skos:notation "02.38"^^ggic-lhk: ;
+    skos:notation "02.38"^^lhk: ;
     skos:prefLabel "work authority"@en ;
 .
 
@@ -1020,7 +1021,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :special-exploration-licence ,
         :temporary-reserve ,
         :tourist-mining-authority ;
-    skos:notation "01"^^ggic-lhk: ;
+    skos:notation "01"^^lhk: ;
     skos:prefLabel "exploration"@en ;
     skos:topConceptOf cs: ;
 .
@@ -1109,7 +1110,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :special-mining-lease ,
         :special-purpose-mining-permit ,
         :work-authority ;
-    skos:notation "02"^^ggic-lhk: ;
+    skos:notation "02"^^lhk: ;
     skos:prefLabel "production"@en ;
     skos:topConceptOf cs: ;
 .
@@ -1120,11 +1121,12 @@ cs:
     schema:creator <https://linked.data.gov.au/org/agson> ;
     schema:dateIssued "2017-09-06"^^xsd:date ;
     schema:dateModified "2024-10-16"^^xsd:date ;
+    schema:status astatus:experimental ;
     skos:historyNote "This vocabulary is expressed for the first time here" ;
     schema:publisher <https://linked.data.gov.au/org/agson> ;
-    schema:citation "This vocabulary is expressed for the first time here" ;
     owl:versionInfo "v0.1"^^xsd:string ;
     skos:changeNote
+        "2025-08-25 NJC: Added status experimental to ConceptScheme for status testing" ,
         "2024-10-16 NJC: update to be VocPub 4.10 valid" ,
         "2016-07-22 OLR: Reformat SKOS-RDF for migration to new repository" ,
         "2015-11-26: Original SKOS implementation" ,

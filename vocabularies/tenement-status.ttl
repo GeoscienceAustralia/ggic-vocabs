@@ -1,4 +1,5 @@
 PREFIX : <http://resource.geoscience.gov.au/classifier/ggic/tenement-status/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenement-status>
 PREFIX lhk: <http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -551,10 +552,12 @@ cs:
     schema:creator <https://linked.data.gov.au/org/agson> ;
     schema:dateIssued "2017-09-06"^^xsd:string ;
     schema:dateModified "2024-10-16"^^xsd:date ;
+    schema:status astatus:experimental ;
     skos:historyNote "This vocabulary is expressed for the first time here" ;
     schema:publisher <https://linked.data.gov.au/org/agson> ;
     owl:versionInfo "v0.1"^^xsd:string ;
     skos:changeNote
+        "2025-08-25 NJC: Added status experimental to ConceptScheme for status testing" ,
         "2024-10-16 NJC: update to be VocPub 4.10 valid" ,
         "2016-07-22 OLR: Reformat SKOS-RDF for new repository" ,
         "2015-12-15: Added \"grant\" (not \"granted\") from NTGS" ,

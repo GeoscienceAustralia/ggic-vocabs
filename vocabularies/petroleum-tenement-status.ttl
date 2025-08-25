@@ -1,4 +1,5 @@
 PREFIX : <http://resource.geoscience.gov.au/classifier/ggic/petroleum-tenement-status/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://resource.geoscience.gov.au/classifierScheme/ggic/2021.01/petroleum-tenement-status>
 PREFIX lhk: <http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -959,9 +960,11 @@ cs:
     schema:dateCreated "2021-06-14"^^xsd:date ;
     schema:creator <https://linked.data.gov.au/org/agson> ;
     schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:status astatus:experimental ;
     skos:historyNote "This file contains the 2021.01 SKOS-RDF version of the GGIC Petroleum Tenement Type vocabulary; adopted April 2021; converted to MS Excel XML for SKOS generation using SKOS_from_XLS_2019.01.xslt"@en ;
     schema:publisher <https://linked.data.gov.au/org/agson> ;
     skos:changeNote
+        "2025-08-25 NJC: Added status experimental to ConceptScheme for status testing" ,
         "2024-10-16 NJC: update to be VocPub 4.10 valid" ,
         "2021-06-14 OLR: Original SKOS implementation" ,
         "2021-07-05 Nicholas Car & Vaughan Edgell: SKOS implementation aligned with VocPub vocabulary profile for display" ,
