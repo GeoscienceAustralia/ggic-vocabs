@@ -1,0 +1,9 @@
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/org/agson>
+    a schema:Organization ;
+    schema:name "Australian Geological Survey Organisations Network (AGSON)" ;
+    schema:url "https://www.geoscience.gov.au/"^^xsd:anyURI ;
+.
