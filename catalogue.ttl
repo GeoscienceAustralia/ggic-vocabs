@@ -1,0 +1,25 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://resource.geoscience.gov.au/catalogue/ggic-vocabs>
+    a dcat:Catalog ;
+    dcterms:hasPart
+        <http://resource.geoscience.gov.au/classifierScheme/ggic/2021.01/petroleum-tenement-status> ,
+        <http://resource.geoscience.gov.au/classifierScheme/ggic/2021.01/petroleum-tenement-type> ,
+        <http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenement-status> ,
+        <http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype> ;
+    skos:historyNote "This catalogue was was created in 2024 from the long-standing listing of GGIC vocabs published by GA for GGIC"@en ;
+    schema:codeRepository "https://github.com/GeoscienceAustralia/ggic-vocabs" ;
+    schema:contributor <https://kurrawong.ai> ;
+    schema:creator <https://linked.data.gov.au/org/ggic> ;
+    schema:dateCreated "2017"^^xsd:gYear ;
+    schema:dateModified "2024-12-30"^^xsd:date ;
+    schema:description "The Australia-New Zealand Government Geoscience Information Committee (GGIC)'s vocabularies of controlled geoscience terms" ;
+    schema:keywords
+        "Tenements" ;
+    schema:name "GGIC Vocabularies" ;
+    schema:publisher <https://linked.data.gov.au/org/ggic> ;
+.

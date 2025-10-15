@@ -1,0 +1,32 @@
+image::style/ausgin-logo-invert.png[]
+
+= GGIC's Vocabularies
+
+This repository contains the source files of the Australian Geological Survey Organisations Network (AGSON)'s vocabularies, published as part of the http://www.geoscience.gov.au/[AGSON system online].
+
+These vocabularies are presented as https://www.w3.org/TR/skos-reference/[Simple Knowledge Organization System (SKOS)] vocabularies and are delivered online at:
+
+* **<http://ggic.vocabs.ga.gov.au>**
+
+== License
+GGIC's vocabularies in this repository are licensed using the https://creativecommons.org/licenses/by/4.0/[CC BY 4.0] licence. See the [LICENSE file](LICENSE) for the deed.
+
+
+== Contact
+https://www.ga.gov.au[Geoscience Australia]'s Data Manager:
+
+dataman@ga.gov.au
+
+
+== Prez resources
+
+This listing of the resources in this repository is used by the https://kurrawong.ai/products/prez/[Prez System] to display the vocabularies correctly.
+
+|===
+| Resource | Location | Notes
+
+| Catalogue Definition | `catalogue.ttl` |
+| Items | `./vocabularies/*.ttl` | Multiple ttl files
+| Profile Definition | https://github.com/RDFLib/prez/blob/main/prez/reference_data/profiles/ogc_records_profile.ttl[Prez Records Profile] | Default Prez profile for Records API
+| Context Resources | `_background/*.ttl` | Multiple labels files for ontologies, licenses & agents
+|===
